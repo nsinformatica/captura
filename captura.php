@@ -16,12 +16,24 @@
             box-shadow: 10px 10px 37px 0px rgba(115,113,115,1);
 	    }
 	</style>
+    <script>
+            function formatar(mascara, documento){
+              var i = documento.value.length;
+              var saida = mascara.substring(0,1);
+              var texto = mascara.substring(i)
+              
+              if (texto.substring(0,1) != saida){
+                        documento.value += texto.substring(0,1);
+              }
+              
+            }
+    </script>
 </head>
 <body>
 <div class="container" id="tamanho" style="margin-top: 100px; border-radius: 15px; border: 2px solid #f3f3f3;">
     <div style="padding: 10px;"> 
     <center>
-    <img src="imagem/cadeado.png" width="125px" height="125px">
+    <img src="imagem/cadeado2.png" width="125px" height="125px">
     </center>
     <form action="index1.php" method="post">
         <div class="form-group">
@@ -30,7 +42,7 @@
         </div>
         <div class="form-group">
             <label>Telefone</label>
-            <input type="text" name="telefone" class="form-control" placeholder="Senha" autocomplete="off" required>
+            <input type="text" name="telefone" class="form-control" placeholder="Telefone" OnKeyPress="formatar('(##)-#####-####', this)"autocomplete="off" required>
         </div>
     
     <div style="text-align: right;">
