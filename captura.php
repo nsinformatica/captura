@@ -37,12 +37,12 @@
     </center>
     <form action="index1.php" method="post">
         <div class="form-group">
-            <label>Nome</label>
+            <label>Nome:</label>
             <input type="text" name="nome" class="form-control" placeholder="Nome" autocomplete="off" required>
         </div>
         <div class="form-group">
-            <label>Telefone</label>
-            <input type="text" name="telefone" class="form-control" placeholder="Telefone" OnKeyPress="formatar('(##)-#####-####', this)"autocomplete="off" required>
+            <label>Telefone:</label>
+            <input type="text" name="telefone" class="form-control" placeholder="Telefone (XX)XXXXX-XXXX" OnKeyPress="formatar('(##)-#####-####', this)"autocomplete="off" required>
         </div>
     
     <div style="text-align: right;">
